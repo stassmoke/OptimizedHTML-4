@@ -8,7 +8,18 @@
 ::selection
 	background-color: $accent
 	color: #fff
+*
+	box-sizing: border-box
+p
+	margin: 0
+	padding: 0
 
+h1, h2, h3, h4, h5, h6
+	margin: 0
+	padding: 0
+ul
+	margin: 0
+	padding: 0
 body
 	font-size: 16px
 	min-width: 320px
@@ -16,7 +27,9 @@ body
 	line-height: 1.65
 	font-family: $default-font
 	overflow-x: hidden
-	color: $text
+	margin: 0
+	padding: 0
+	color: #fff
 	input, textarea
 		border: #666 1px solid
 		outline: none
@@ -25,19 +38,179 @@ body
 		&:required:valid
 			border-color: green
 
+.container
+	max-width: 100%
+	width: 100%
+	min-width: 320px
+	margin: 0 auto
+
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
 	&.img-width
 		width: 100%
-
+.c-pink
+	color: $accent
 .text-center
 	text-align: center
 
 b, strong
 	font-weight: bold
-
-
+.bg-line
+	position: absolute
+	top: -124px
+	left: 622px
+	right: auto
+	opacity: 0.6
+	pointer-events: none
+.wrap-all__page
+	position: relative
+.section-header
+	background-image: url('../img/header-bg.png')
+	background-position: center top
+	-webkit-background-size: cover
+	background-size: 100%
+	background-repeat: no-repeat
+	height: 781px
+.wrap-titile
+	width: 70%
+	padding-top: 80px
+	text-align: center
+.header-title
+	margin: 0 auto
+	display: block
+	text-transform: uppercase
+	font-size: 3vw
+	font-weight: 700
+	letter-spacing: 2px
+	width: 830px
+	color: #000
+	font-family: HeliosBold
+	img
+		width: 100%
+.other-font
+	font-family: HelveticaBold
+	letter-spacing: 7.2px
+	background-color: #818f9a
+	font-size: 1.8vw
+	line-height: 1
+	padding: 8px 12px 0 12px
+	color: #fff
+	display: inline-block
+	margin: 0 auto
+.section-tickets
+	height: 1205px
+	background-color: #000
+	background-image: url('../img/second-section_bg.png')
+	background-position: 0 bottom
+	background-size: 104%
+	background-repeat: no-repeat
+.row-flex
+	display: flex
+	flex-direction: row
+	padding-top: 26px
+.text-in__row
+	color: #fff
+	padding: 70px 0 0 60px
+	line-height: 1
+	span
+		line-height: 1
+	.text-row__1
+		font-size: 41px
+		text-transform: uppercase
+		font-weight: 700
+		font-family: HeliosBold
+		line-height: .8
+	.text-row__2
+		font-size: 127px
+		color: $accent
+		line-height: 1.4
+		font-family: HeliosBold
+		letter-spacing: -0.96px
+		font-weight: bold
+	.text-row__3
+		font-size: 31px
+		text-transform: uppercase
+		line-height: .8
+		font-family: HeliosRegular
+		letter-spacing: -0.16px
+	.text-row__4
+		font-size: 46px
+.wrap-img
+	margin: 12px 0 0 17px
+.photo-1
+	margin-left: -10px
+	margin-right: -100px
+	z-index: 2
+.photo-2
+	z-index: 1
+.photo
+	position: relative
+.col-2__text
+	line-height: 1
+	margin-left: 46px
+	margin-bottom: 15px
+.fz-84
+	font-size: 84px
+	font-weight: 800
+	line-height: 1
+	font-family: HeliosRegular
+	letter-spacing: 2.8px
+.fz-80
+	font-size: 80px
+	letter-spacing: 2.2px
+	font-weight: 800
+	font-family: HeliosRegular
+.ff-h
+	font-family: HeliosRegular
+	font-weight: 100
+	font-size: 47px
+	letter-spacing: 3.21px
+.fz-47
+	font-size: 47px
+	font-family: HeliosBlack
+	font-weight: 900
+	line-height: 1.8
+.ttu
+	text-transform: uppercase
+.owerlay-img
+	width: 100%
+	height: 100%
+	overflow: hidden
+	img
+		width: 100%
+		object-fit: cover
+		height: auto
+.row-2
+	padding-top: 80px
+.col-3
+	margin-left: 60px
+	width: 38%
+.col-1
+	width: 26%
+.col-2
+	width: 31%
+.col-3__text
+	font-size: 30px
+	line-height: 1
+	text-transform: uppercase
+	vertical-align: top
+	display: inline-block
+.col-3__img--1
+	vertical-align: top
+	display: inline-block
+	margin: -20px 0 0 -100px
+.lh-1
+	line-height: 1.4
+.lh-2
+	line-height: 1.2
+.col-3__text--2
+	font-size: 30px
+	text-transform: uppercase
+	line-height: 1.2
+	.c-pink
+		font-weight: 700
+		letter-spacing: -0.32px
 
 @import "media" // Always at the end
